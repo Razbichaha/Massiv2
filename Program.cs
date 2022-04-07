@@ -15,7 +15,6 @@ namespace Massiv2
 
             for (int i = 0; i < array.GetLength(0); i++)
             {
-
                 for (int ii = 0; ii < array.GetLength(1); ii++)
                 {
                     array[i, ii] = random.Next(minRandom, maxRandom);
@@ -24,20 +23,17 @@ namespace Massiv2
 
             for (int i = 0; i < array.GetLength(0); i++)
             {
-
                 for (int ii = 0; ii < array.GetLength(1); ii++)
                 {
                     Console.Write(array[i, ii] + " ");
                 }
-
                 Console.Write("\n");
             }
 
-            int maxValue = 0;
-
+            int maxValue = Int32.MinValue;
+             
             for (int i = 0; i < array.GetLength(0); i++)
             {
-
                 for (int ii = 0; ii < array.GetLength(1); ii++)
                 {
                     if (array[i, ii] > maxValue)
@@ -67,7 +63,6 @@ namespace Massiv2
 
             for (int i = 0; i < array.GetLength(0); i++)
             {
-
                 for (int ii = 0; ii < array.GetLength(1); ii++)
                 {
                     if(array[i,ii]<alignOutputVariable)
@@ -78,10 +73,8 @@ namespace Massiv2
                         Console.Write(array[i, ii] + " ");
                     }
                 }
-
                 Console.Write("\n");
             }
-
             Console.ReadLine();
         }
     }
